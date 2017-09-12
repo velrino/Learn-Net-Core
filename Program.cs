@@ -4,14 +4,19 @@ namespace hwapp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            string string1; // current value is null
-            string1 = "Hello";
+            string emptyString = String.Empty;
+            string nullString = null;
 
-            string string2 = "Hello";
-            Console.WriteLine(string1);
-            Console.WriteLine(string2);
+            Console.WriteLine(emptyString); // prints nothing
+            Console.WriteLine(nullString); // prints nothing
+
+            // this line will print 0
+            Console.WriteLine($"1st string is {emptyString.Length} characters long.");
+
+            // this line will throw an exception (uncomment it to confirm)
+            // Console.WriteLine($"2nd string is {nullString.Length} characters long.");
         }
     }
 }
