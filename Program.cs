@@ -6,9 +6,24 @@ namespace hwapp
     {
         static void Main()
         {
-            DateTime nextYear = new DateTime(DateTime.Today.Year+1, 1, 1);
-            TimeSpan duration = nextYear - DateTime.Today;
-            Console.WriteLine($"There are {duration.TotalDays} days left in the year");
+            int guessedNumber = int.Parse(Console.ReadLine());
+            switch (guessedNumber)
+            {
+                case 0:
+                    Console.WriteLine("Sorry, 0 is not a valid guess.");
+                    break;
+                case 1:
+                case 2:
+                case 3:
+                    Console.WriteLine("You guessed low.");
+                    break;
+                case 4:
+                    Console.WriteLine("You guessed the right number!");
+                    break;
+                default:
+                    Console.WriteLine("You guessed high.");
+                    break;
+            }
         }
     }
 }
