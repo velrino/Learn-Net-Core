@@ -6,17 +6,11 @@ namespace hwapp
     {
         static void Main()
         {
-            string emptyString = String.Empty;
-            string nullString = null;
+            string one = "abc";
+            string two = "123";
+            string combined = one + two; // "abc123"
 
-            Console.WriteLine(emptyString); // prints nothing
-            Console.WriteLine(nullString); // prints nothing
-
-            // this line will print 0
-            Console.WriteLine($"1st string is {emptyString.Length} characters long.");
-
-            // this line will throw an exception (uncomment it to confirm)
-            // Console.WriteLine($"2nd string is {nullString.Length} characters long.");
+            Console.WriteLine(combined);
         }
     }
 }
