@@ -6,8 +6,12 @@ namespace hwapp
     {
         static void Main(string[] args)
         {
-            var name = "Velrino";
-            Console.WriteLine($"Hello {name}!");
+            string string1; // current value is null
+            string1 = "Hello";
+
+            string string2 = "Hello";
+            Console.WriteLine(string1);
+            Console.WriteLine(string2);
         }
     }
 }
