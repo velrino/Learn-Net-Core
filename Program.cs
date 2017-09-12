@@ -1,4 +1,4 @@
-﻿//using System;
+﻿using System;
 
 namespace hwapp
 {
@@ -6,7 +6,8 @@ namespace hwapp
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Hello World!");
+            var name = "Velrino";
+            Console.WriteLine($"Hello {name}!");
         }
     }
 }
