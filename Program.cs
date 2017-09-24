@@ -23,12 +23,14 @@ namespace hwapp
             int choose = int.Parse(option);
             if (choose == 1)
                 Extension();
+            if (choose == 2)
+                Lambda.ListFilter();
             Start();
         }
         static string DisplayMenu()
         {
             Console.WriteLine("1 - Extension");
-            Console.WriteLine("2 - Lorem Ipsum");
+            Console.WriteLine("2 - Lambda");
             Console.WriteLine("3 - Lorem Ipsum");
             String option = Console.ReadLine();
             return option;
