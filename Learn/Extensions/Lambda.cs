@@ -5,13 +5,11 @@ using System.Text;
 
 namespace hwapp.Learn.Extensions
 {
-    class Lambda
+    static class Lambda
     {
-        public static IEnumerable<int> ListFilter()
+        public static List<int> ListFilter(this List<int> list, int n)
         {
-            var list = new List<int>() {1,2,3,4,5,6,7,8}.Where(x => x > 4);
-            list.ToList().ForEach(n => Console.WriteLine(n));
-            return list;
+            return list.Where(x => x > n).ToList();
         }
     }
 }
