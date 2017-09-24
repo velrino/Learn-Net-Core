@@ -8,3 +8,4 @@ C:\Users\velrino\Desktop\projetos\net\core\hwapp\obj\Debug\netcoreapp2.0\hwapp.A
 C:\Users\velrino\Desktop\projetos\net\core\hwapp\obj\Debug\netcoreapp2.0\hwapp.AssemblyInfo.cs
 C:\Users\velrino\Desktop\projetos\net\core\hwapp\obj\Debug\netcoreapp2.0\hwapp.dll
 C:\Users\velrino\Desktop\projetos\net\core\hwapp\obj\Debug\netcoreapp2.0\hwapp.pdb
+C:\Users\velrino\Desktop\projetos\net\core\hwapp\obj\Debug\netcoreapp2.0\hwapp.csprojResolveAssemblyReference.cache
