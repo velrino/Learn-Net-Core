@@ -9,7 +9,7 @@ namespace hwapp.Learn.Extensions
         }
         public static int Triplicate(this int n)
         {
-            return (n * 3);
+            return (n*3);
         }
 
     }

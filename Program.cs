@@ -2,6 +2,8 @@
 using hwapp.Learn.Extensions;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using hwapp.Learn.Models;
 
 namespace hwapp
 {
@@ -22,18 +24,28 @@ namespace hwapp
                 Console.WriteLine("Not a valid number, try again.");
                 option = DisplayMenu();
             }
+
             int choose = int.Parse(option);
+
+            Console.WriteLine(string.Format("====== YOUR CHOICE {0} ======", choose));
+
             if (choose == 1)
                 Extension();
-            if (choose == 2)
+            else if(choose == 2)
                 Lambda();
+            else if(choose == 3)
+                Reflection();
+            else if(choose == 0)
+                Environment.Exit(0);
             Start();
         }
         static string DisplayMenu()
         {
+            Console.WriteLine("====== MENU ======");
             Console.WriteLine("1 - Extension");
             Console.WriteLine("2 - Lambda");
-            Console.WriteLine("3 - Lorem Ipsum");
+            Console.WriteLine("3 - Reflection");
+            Console.WriteLine("0 - Exit");
             String option = Console.ReadLine();
             return option;
         }
@@ -70,6 +82,13 @@ namespace hwapp
                 Lambda();
             }
             new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8 }.ListFilter(n).ForEach(i => Console.WriteLine(i));
+            return true;
+        }
+
+        static bool Reflection()
+        {
+            var user = new User() { name = "Velrino", years = 21 }.Logers();
+            var car = new Car() { brand = "Chrevrolet", model = "Astra" }.Logers();
             return true;
         }
     }
